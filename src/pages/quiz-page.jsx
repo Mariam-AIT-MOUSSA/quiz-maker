@@ -1,7 +1,6 @@
-import { Link } from "react-router-dom";
 import Questions from "../components/questions";
 import SearchBar from "../components/searchBar";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export default function Quiz() {
     const [creationStarted, setCreationStarted ] = useState(false);
