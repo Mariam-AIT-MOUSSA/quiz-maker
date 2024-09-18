@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import QuestionCard from "./questionCard";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { decodeHtmlEntities } from "../utilities/parser";
 
 export default function Questions({ category, difficulty }) {

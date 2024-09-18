@@ -10,6 +10,7 @@ function App() {
         <div className="bg-white p-6 rounded-lg shadow-lg w-full max-w-4xl mx-6">
           <Routes>
             <Route path="/" element={<Quiz />} />
+            <Route path="/quiz-maker" element={<Quiz />} />
             <Route path="/results" element={<Results />} />
           </Routes>
         </div>
