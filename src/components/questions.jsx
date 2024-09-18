@@ -27,8 +27,8 @@ export default function Questions({ category, difficulty }) {
                     ]);
                     return {
                         question: decodeHtmlEntities(questionItem.question),
-                        correctAnswer: questionItem.correct_answer,
-                        options: options,
+                        correctAnswer: decodeHtmlEntities(questionItem.correct_answer),
+                        options: options.map(option => decodeHtmlEntities(option)),
                         selectedAnswer: null
                     };
                 });

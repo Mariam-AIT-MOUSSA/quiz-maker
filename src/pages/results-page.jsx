@@ -2,17 +2,17 @@ import { Link, useLocation } from "react-router-dom";
 import { bgColors } from "../static/bgColors";
 import QuestionCard from "../components/questionCard";
 
-export default function Results({ answers }) {
+export default function Results() {
     const location = useLocation();
     const { state } = location;
 
     function calculateScore() {
         let score = 0;
-        state.map(answer => {
-            if (answer.selectedAnswer === answer.correctAnswer) {
+        state.forEach((question) => {
+            if (question.selectedAnswer === question.correctAnswer) {
                 score += 1;
             }
-        })
+          });
         return score;
     }
 
